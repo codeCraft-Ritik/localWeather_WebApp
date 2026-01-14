@@ -34,7 +34,14 @@ body {
     display: flex;
     align-items: center;
     cursor: pointer;
+    transition: transform 0.2s ease;  
 }
+
+.degree-section:hover {
+    transform: scale(1.1);
+}
+
+
 
 .degree-section span {
     margin: 10px;
@@ -44,4 +51,14 @@ body {
 .degree-section h2 {
     font-size: 40px;
 
+}
+
+/* Some Css for the loc and temp */
+.location, .temperature {
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+    backdrop-filter: blur(10px);          /* Frosted glass effect */
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    margin: 10px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
